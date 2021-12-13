@@ -1,0 +1,10 @@
+Package: SANonogramSolver
+Type: Package
+Title: Nonogram Solver using simulated Annealing
+Version: 0.1.0
+Author: ezulfica
+Maintainer: 
+Description: Solves nonograms using simulated annealing method.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
