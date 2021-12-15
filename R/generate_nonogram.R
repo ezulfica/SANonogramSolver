@@ -80,7 +80,7 @@ generate_nonogram = function(pattern){
       boat2 = list(
         nonogram = NULL, 
         rows_clues = list(1,3,c(1,2), c(1,3), 
-                          c(1,3), c(1,3), c(2,4), 
+                          c(1,3), c(2,4), 
                           6, 1, 10, 8), 
         cols_clues = list(1, c(3,2), 
                           c(1,2,2), c(1,1,2), 10, 
