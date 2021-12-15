@@ -43,7 +43,9 @@ In order to compute the error the maximum number of segments is calculated (s).
 For each segments we took the numbers of black cells, and if the number of segments is lesser than s, we add zeros. 
 
 n_S = (2,1,1)
+
 n_G = (1,2,0)
+
 Then : 
 
 Cost = |n_S - n_G| = |2-1| + |1-2| + |1-0| = 3. 
