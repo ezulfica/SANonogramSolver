@@ -8,6 +8,8 @@ The thing is, with nonogram. If we set :
 
 We can make a lot of combination before solving it, precisely : <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/binom.png" style="display: block; margin: auto;" />
 
+Since it's using simulated annealing method, it is possible to not obtain the solution by the number of iteration defined. 
+
 # The generation and transition :
 
 It is possible to start with two way : 
@@ -30,10 +32,25 @@ We move the black cells to the right or left only.
 
 # The cost function : 
 
+For the cost function, let's suppose that the Solution S : 
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/err1.png" style="display: block; margin: auto;" />
+and a state G
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/err2.png" style="display: block; margin: auto;" />
 
-Since it's using simulated annealing method, it is possible to not obtain the solution, or it takes a lot of times. 
+In order to compute the error the maximum number of segments is calculated (s). 
+For each segments we took the numbers of black cells, and if the number of segments is lesser than s, we add zeros. 
+
+n_S = (2,1,1)
+n_G = (1,2,0)
+Then : 
+
+Cost = |n_S - n_G| = |2-1| + |1-2| + |1-0| = 3. 
+
+## The reason of this metric
+In order to verify if we have a good cell allocation, our cost function tells us three things : 
+- If we have the required numbers of cells
+- If we have the required numbers of segments
+- If we have the required numbers of cells by segments
 
 
 
