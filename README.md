@@ -20,7 +20,7 @@ We then choose one black cells among the exceeding rows and columns and then cha
 
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/ezgif-7-254174d756.gif" style="display: block; margin: auto;" />
 
-##Second generation : 
+## Second generation : 
 We respect the condition on the row
 
 ### Associated transition :
@@ -28,7 +28,10 @@ We move the black cells to the right or left only.
 
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/ezgif-7-b83879f7d8.gif" style="display: block; margin: auto;" />
 
-# The cost function
+# The cost function : 
+
+<img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/err1.png" style="display: block; margin: auto;" />
+<img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/err2.png" style="display: block; margin: auto;" />
 
 Since it's using simulated annealing method, it is possible to not obtain the solution, or it takes a lot of times. 
 
