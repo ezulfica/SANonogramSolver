@@ -33,8 +33,10 @@ We move the black cells to the right or left only.
 # The cost function : 
 
 For the cost function, let's suppose that the Solution S : 
+
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/err1.png" style="display: block; margin: auto;" />
-and a state G
+and a state G : 
+
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/err2.png" style="display: block; margin: auto;" />
 
 In order to compute the error the maximum number of segments is calculated (s). 
