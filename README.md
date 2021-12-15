@@ -8,6 +8,11 @@ The thing is, with nonogram. If we set :
 
 We can make a lot of combination before solving it, precisely : <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/binom.png" style="display: block; margin: auto;" />
 
+Examples : 
+
+<img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/ezgif-7-254174d756.gif" style="display: block; margin: auto;" />
+<img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/ezgif-7-49e7b54fc4.gif" style="display: block; margin: auto;" />
+
 TODO : 
 - Write the README
 - optimize the code with some C/C++ loops to make it faster when the dimension is growing. 
