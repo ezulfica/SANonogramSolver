@@ -3,8 +3,8 @@ Nonogram Solver using Simulated Annealing
 
 I will try to present the funniest project i have done. It's about using Simulated Annealing with nonogram to solve them.
 The thing is, with nonogram. If we set : 
-- n = numbers of rows * numbers of columns
-- k = numbers of black cells
+- n = number of rows * number of columns
+- k = number of black cells
 
 We can make a lot of combination before solving it, precisely : <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/binom.png" style="display: block; margin: auto;" />
 
@@ -40,7 +40,7 @@ and a state G :
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/err2.png" style="display: block; margin: auto;" />
 
 In order to compute the error the maximum number of segments is calculated (NS). 
-For each segments we took the numbers of black cells, and if the number of segments is lesser than NS, we add zeros. 
+For each segments we took the number of black cells, and if the number of segments is lesser than NS, we add zeros. 
 
 n_S = (2,1,1)
 
@@ -50,13 +50,13 @@ Then :
 
 Cost = |n_S - n_G| = |2-1| + |1-2| + |1-0| = 3. 
 
-We compute every cost by rows and columns (named NB_conflits, which in french mean the numbers of conflicts)
+We compute every cost by rows and columns (named NB_conflits, which in french mean the number of conflicts)
 
 ## The reason of this metric
 In order to verify if we have a good cell allocation, our cost function tells us three things : 
-- If we have the required numbers of cells
-- If we have the required numbers of segments
-- If we have the required numbers of cells by segments
+- If we have the required number of cells
+- If we have the required number of segments
+- If we have the required number of cells by segments
 
 
 
