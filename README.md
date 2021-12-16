@@ -20,6 +20,23 @@ Firstly we place k black cells randomly.
 ### Associated transition : 
 We then choose one black cells among the exceeding rows and columns and then change it with an empty cells where it is require to add one cells
 
+``` r
+nonogram = generate_nonogram(pattern = "boat2")
+#pattern = c("random", "penguin", "yinyang" , "boat", "boat2", "fisherman")
+r_clues = nonogram$rows_clues
+c_clues = nonogram$cols_clues
+
+solve_nonogram(r_clues = r_clues, 
+               c_clues = c_clues, 
+               n_simul = 50000, 
+               beta0 = 0.3, 
+               generate = 1, tv = 1, 
+               step = 1000, 
+               restart = FALSE, 
+               plot_result = T, 
+               plot_solution = F)
+```
+
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/ezgif-7-254174d756.gif" style="display: block; margin: auto;" />
 
 ## Second generation : 
@@ -28,7 +45,49 @@ We respect the condition on the row
 ### Associated transition :
 We move the black cells to the right or left only. 
 
+``` r
+nonogram = generate_nonogram(pattern = "penguin")
+#pattern = c("random", "penguin", "yinyang" , "boat", "boat2", "fisherman")
+r_clues = nonogram$rows_clues
+c_clues = nonogram$cols_clues
+
+solve_nonogram(r_clues = r_clues, 
+               c_clues = c_clues, 
+               n_simul = 50000, 
+               beta0 = 0.3, 
+               generate = 2, tv = 2, 
+               step = 1000, 
+               restart = FALSE, 
+               plot_result = T, 
+               plot_solution = F)
+```
+
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/ezgif-7-b83879f7d8.gif" style="display: block; margin: auto;" />
+
+for the plot, i was inspired by coolbutuseless nonogram solver (https://github.com/coolbutuseless/nonogram)
+
+# The clues 
+
+The clues are in form of list : 
+
+example : 
+``` r
+r_clues = list(2, 4, c(3,1), 7, 6, c(1,3), 
+               1:2, 1:2,c(1,3), c(1,3), 
+               1:2, 1:2, c(2,1), c(4,2), c(2,5)
+)
+c_clues = list(1, 1, c(3,4,1), c(6,2,1),
+               c(1,2,1), c(4,2), c(7,2),
+               c(8,1), 7, 2, c(1,2,1), c(4,4,2), c(3,5))
+```
+
+and it's possible to plot an empty grid with the clues : 
+
+``` r
+plot_nonogram(X = 0, r_clues = r_clues, c_clues = c_clues) 
+#X = 0 for an empty grid, else put a vector of length n (or an nrows*ncols matrix)
+```
+<img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/emptyggrid.png" style="display: block; margin: auto;" />
 
 # The cost function : 
 
