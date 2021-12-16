@@ -11,7 +11,11 @@
 #   X_BEST : a vector or a Matrix that will be use if you restart
 #   plot_result : TRUE or FALSE. If you want to show a plot of the working solver. Will plot every step
 #   plot_solution : TRUE or FALSE. If the solution already exist, you can also plot it next to the current result
-  
+
+require(ggplot2)
+require(dplyr)
+require(gridExtra)
+require(cowplot)
   
 solve_nonogram = function(r_clues = NULL, c_clues = NULL, n_simul, beta0, generate = c(1,2), tv, step = 1000, restart = FALSE, X_BEST = NULL, plot_result = F, plot_solution = F) {
   
