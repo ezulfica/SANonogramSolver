@@ -40,7 +40,7 @@ solve_nonogram(r_clues = r_clues,
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/ezgif-7-254174d756.gif" style="display: block; margin: auto;" />
 
 ## Second generation : 
-We respect the condition on the row
+We respect the condition on the rows
 
 ### Associated transition :
 We move the black cells to the right or left only. 
