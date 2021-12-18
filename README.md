@@ -18,7 +18,7 @@ It is possible to start with two way :
 Firstly we place k black cells randomly. 
 
 ### Associated transition : 
-We then choose one black cells among the exceeding rows and columns and then change it with an empty cells where it is require to add one cells
+We then choose one black cells among the exceeding rows and columns and then change it with an empty cells where it is required to add one cells
 
 ``` r
 nonogram = generate_nonogram(pattern = "boat2")
