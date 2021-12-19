@@ -12,7 +12,7 @@ Nonogram Solver using Simulated Annealing
 
 # 
 
-Let's talk about nonogram. I like puzzle and I like to think about how to resolve them. This time it's about using Simulated Annealing to solve them.
+Let's talk about nonogram. I like puzzle and I like to think about how to resolve them. This time it's about using Simulated Annealing to solve nonogram.
 
 The thing is, with nonogram. If we set : 
 - n = number of rows * number of columns
@@ -22,9 +22,10 @@ We can make a lot of combination before solving it, precisely :
 
 number of combination = <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/binom.png" style="display: block; margin: auto;" />
 
-Since it's using simulated annealing method, it is possible to not obtain the solution by the number of iteration defined. 
+This is why we want to Use SA. With the correct optimization, it will be faster to resolve a nonogram than testing all possible combinations.
+Just a little reminder : since it's using simulated annealing method, it is possible to not obtain the solution by the number of iteration defined. 
 
-# The generation and transition :
+# The generation of the initial state and the associated transition :
 
 It is possible to start with two way : 
 
@@ -77,6 +78,8 @@ solve_nonogram(r_clues = r_clues,
 ```
 
 <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/ezgif-7-b83879f7d8.gif" style="display: block; margin: auto;" />
+
+Altought, it is still possible to use the first transition, depending on the situation, it might be slower or stuck in a local minima. 
 
 for the plot, i was inspired by coolbutuseless nonogram solver (https://github.com/coolbutuseless/nonogram)
 
