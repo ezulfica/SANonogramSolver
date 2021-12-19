@@ -129,7 +129,7 @@ Cost = |n_S - n_G| = |2-1| + |1-2| + |1-0| = 3.
 We compute every cost by rows and columns (named NB_conflits, which in french mean the number of conflicts)
 
 ## The reason of this metric
-In order to verify if we have a good cell allocation, our cost function tells us three things : 
+In order to verify if we have a good cells allocation, our cost function tells us three things : 
 - If we have the required number of cells
 - If we have the required number of segments
 - If we have the required number of cells by segments
