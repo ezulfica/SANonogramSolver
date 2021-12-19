@@ -20,7 +20,7 @@ The thing is, with nonogram. If we set :
 
 We can make a lot of combination before solving it, precisely : 
 
-<img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/binom.png" style="display: block; margin: auto;" />
+number of combination = <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/binom.png" style="display: block; margin: auto;" />
 
 Since it's using simulated annealing method, it is possible to not obtain the solution by the number of iteration defined. 
 
