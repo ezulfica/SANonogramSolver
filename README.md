@@ -1,7 +1,6 @@
 # SANonogramSolver
 Nonogram Solver using Simulated Annealing
 
-- [SANonogramSolver](#sanonogramsolver)
 - [The generation and transition :](#the-generation-and-transition--)
   * [Random generation :](#random-generation--)
     + [Associated transition :](#associated-transition--)
