@@ -12,12 +12,15 @@ Nonogram Solver using Simulated Annealing
 
 # 
 
-I will try to present the funniest project i have done. It's about using Simulated Annealing with nonogram to solve them.
+Let's talk about nonogram. I like puzzle and I like to think about how to resolve them. This time it's about using Simulated Annealing to solve them.
+
 The thing is, with nonogram. If we set : 
 - n = number of rows * number of columns
 - k = number of black cells
 
-We can make a lot of combination before solving it, precisely : <img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/binom.png" style="display: block; margin: auto;" />
+We can make a lot of combination before solving it, precisely : 
+
+<img src="https://raw.githubusercontent.com/ezulfica/SANonogramSolver/main/img/binom.png" style="display: block; margin: auto;" />
 
 Since it's using simulated annealing method, it is possible to not obtain the solution by the number of iteration defined. 
 
