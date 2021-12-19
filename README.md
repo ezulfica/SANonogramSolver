@@ -1,6 +1,19 @@
 # SANonogramSolver
 Nonogram Solver using Simulated Annealing
 
+- [SANonogramSolver](#sanonogramsolver)
+- [The generation and transition :](#the-generation-and-transition--)
+  * [Random generation :](#random-generation--)
+    + [Associated transition :](#associated-transition--)
+  * [Second generation :](#second-generation--)
+    + [Associated transition :](#associated-transition---1)
+- [The clues](#the-clues)
+- [The cost function :](#the-cost-function--)
+  * [The reason of this metric](#the-reason-of-this-metric)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 I will try to present the funniest project i have done. It's about using Simulated Annealing with nonogram to solve them.
 The thing is, with nonogram. If we set : 
 - n = number of rows * number of columns
